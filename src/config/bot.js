@@ -67,11 +67,12 @@ export const botConfig = {
     ],
 
     // Embed colors by application status.
-    statusColors: {
-      pending: "#FFA500",
-      approved: "#00FF00",
-      denied: "#FF0000",
-    },
+  // di dalam applications
+statusColors: {
+  pending: "#FFB6C1",
+  approved: "#FF69B4",
+  denied: "#C71585",
+},
 
     // How long users must wait before submitting another application (hours).
     applicationCooldown: 24,
@@ -91,54 +92,54 @@ export const botConfig = {
   // =========================
   // IMPORTANT: This is the SINGLE SOURCE OF TRUTH for all bot colors
   embeds: {
-    colors: {
-      // Main brand colors.
-      primary: "#336699",
-      secondary: "#2F3136",
+  colors: {
+  // Main brand colors.
+  primary: "#FF69B4",
+  secondary: "#C71585",
 
-      // Standard status colors for success/error/warning/info messages.
-      success: "#57F287",
-      error: "#ED4245",
-      warning: "#FEE75C",
-      info: "#3498DB",
+  // Standard status colors.
+  success: "#FF69B4",
+  error: "#FF1493",
+  warning: "#FFB6C1",
+  info: "#FF00FF",
 
-      // Neutral utility colors.
-      light: "#FFFFFF",
-      dark: "#202225",
-      gray: "#99AAB5",
+  // Neutral utility colors.
+  light: "#FFF0F5",
+  dark: "#8B008B",
+  gray: "#DDA0DD",
 
-      // Discord-style palette shortcuts.
-      blurple: "#5865F2",
-      green: "#57F287",
-      yellow: "#FEE75C",
-      fuchsia: "#EB459E",
-      red: "#ED4245",
-      black: "#000000",
+  // Palette shortcuts.
+  blurple: "#DA70D6",
+  green: "#FF69B4",
+  yellow: "#FFB6C1",
+  fuchsia: "#FF00FF",
+  red: "#FF1493",
+  black: "#4B0030",
 
-      // Feature-specific colors.
-      giveaway: {
-        active: "#57F287",
-        ended: "#ED4245",
-      },
-      ticket: {
-        open: "#57F287",
-        claimed: "#FAA61A",
-        closed: "#ED4245",
-        pending: "#99AAB5",
-      },
-      economy: "#F1C40F",
-      birthday: "#E91E63",
-      moderation: "#9B59B6",
+  // Feature-specific colors.
+  giveaway: {
+    active: "#FF69B4",
+    ended: "#C71585",
+  },
+  ticket: {
+    open: "#FF69B4",
+    claimed: "#FF00FF",
+    closed: "#C71585",
+    pending: "#DDA0DD",
+  },
+  economy: "#FF85C0",
+  birthday: "#FF1493",
+  moderation: "#BA55D3",
 
-      // Ticket priority color mapping.
-      priority: {
-        none: "#95A5A6",
-        low: "#3498db",
-        medium: "#2ecc71",
-        high: "#f1c40f",
-        urgent: "#e74c3c",
-      },
-    },
+  // Ticket priority color mapping.
+  priority: {
+    none: "#DDA0DD",
+    low: "#FFB6C1",
+    medium: "#FF69B4",
+    high: "#FF1493",
+    urgent: "#C71585",
+  },
+},
     footer: {
       // Default footer text used in bot embeds.
       text: "Titan Bot",
@@ -220,33 +221,34 @@ export const botConfig = {
     supportRoles: [],
 
     // Priority options users/staff can assign.
-    priorities: {
-      none: {
-        emoji: "⚪",
-        color: "#95A5A6",
-        label: "None",
-      },
-      low: {
-        emoji: "🟢",
-        color: "#2ECC71",
-        label: "Low",
-      },
-      medium: {
-        emoji: "🟡",
-        color: "#F1C40F",
-        label: "Medium",
-      },
-      high: {
-        emoji: "🔴",
-        color: "#E74C3C",
-        label: "High",
-      },
-      urgent: {
-        emoji: "🚨",
-        color: "#E91E63",
-        label: "Urgent",
-      },
-    },
+  // di dalam tickets
+priorities: {
+  none: {
+    emoji: "⚪",
+    color: "#DDA0DD",
+    label: "None",
+  },
+  low: {
+    emoji: "🌸",
+    color: "#FFB6C1",
+    label: "Low",
+  },
+  medium: {
+    emoji: "💗",
+    color: "#FF69B4",
+    label: "Medium",
+  },
+  high: {
+    emoji: "💖",
+    color: "#FF1493",
+    label: "High",
+  },
+  urgent: {
+    emoji: "🚨",
+    color: "#C71585",
+    label: "Urgent",
+  },
+},
 
     // Default priority for new tickets.
     defaultPriority: "none",
